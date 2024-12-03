@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+{% for task in tasks %}
+    <ul>
+        <li>id: {{ task.id }}</li>
+        <li>name: {{ task.name }}</li>
+        <li>description: {{ task.description }}</li>
+        <li>executor: {{ task.executor }}</li>
+        <li>execution_status: {{ task.execution_status }}</li>
+        <li>date_created: {{ task.date_created }}</li>
+        <li>date_completion: {{ task.date_completion }}</li>
+    </ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+{% if status_success %}
+<p>{{status_success}}</p>
+{% endif %}
+<form action="{% url 'add_task' %}" method="post">
+    {% csrf_token %}
+    {{ task_form }}
+    <input type="submit" value="Создать новую запись">
+</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя страничка</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+{% block header %}
+<header>
+    <div>
+    <div align="center">
+        <h2>Приветствую тебя пользователь</h2>
+    </div>
+</div>
+</header>
+{% endblock %}
+
+{% block body %}
+
+{% endblock %}
+</body>
+</html>

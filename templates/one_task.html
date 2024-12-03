@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block body %}
+    <ul>
+        <li>name: {{ task.name }}</li>
+        <li>description: {{ task.description }}</li>
+        <li>executor: {{ task.executor }}</li>
+        <li>execution_status: {{ task.execution_status }}</li>
+        <li>comment: {{ task.comment }}</li>
+    </ul>
+{% endblock %}
